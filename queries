@@ -1,0 +1,18 @@
+--select sum(sal) sum from emp where job='manager';
+--select count(ename) thecount from emp where deptno=20 or deptno=30
+--SELECT count(ename) from emp where comm is not null;
+--SELECT avg(sal) from emp where job='manager';
+--select deptno, sum(sal) from emp GROUP by deptno;
+--select job, count(*) hct from emp where sal>2000 group by job HAVING count(*)>2 order by hct desc;
+--select deptno, job, count(*) hct from emp GROUP BY deptno, job;
+--select deptno, job, count(*) hct from emp where sal>2000 GROUP BY rollup(deptno, job) ORDER by hct;
+--select * from emp;
+--select count(*),mgr from emp where mgr is not null GROUP By mgr;
+--select upper(ename) a, lower(ename) b , left(ename,2) c from emp;
+--select substring(ename,1,1) a, len(ename) b, reverse(ename) c from emp;
+--select ename, charindex('a',ename) x from emp;
+--select abs(-10) abs, sqrt(64) sqrt;
+--select ename, datediff(year, hiredate, getdate()) as empexperience from emp;
+--SELECT datename(dw, getdate()) as weekday, datename(month, getdate()) as month;
+--select datename(year,hiredate) year, count(*) hct from emp GROUP by datename(year,hiredate) order by hct;
+--select datename(month,hiredate) month, count(*) hct from emp GROUP by datename(month,hiredate), month(hiredate) order by month(hiredate) ;
